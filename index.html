@@ -209,8 +209,8 @@ Spacedots = new function(){
       
       if( player.boost > 0 && ( player.boost > 100 || player.boost % 3 != 0 ) ) {
         context.beginPath();
-        context.fillStyle = '#167a66';//couleur interne au stade augmenter
-        context.strokeStyle = 'yellow';//couleur de la bordure au stade augmenter
+        context.fillStyle = '#167a66';
+        context.strokeStyle = 'yellow';
         context.arc(player.position.x, player.position.y, player.size*2, 0, Math.PI*2, true);
         context.fill();
         context.stroke();
@@ -219,7 +219,7 @@ Spacedots = new function(){
       player.trail.push( new Point( player.position.x, player.position.y ) );
       
       context.beginPath();
-      context.strokeStyle = 'gold';// couleur du fil
+      context.strokeStyle = 'gold';
       context.lineWidth = 2;
       
       for( i = 0, ilen = player.trail.length; i < ilen; i++ ) {
@@ -239,7 +239,7 @@ Spacedots = new function(){
       }
       
       context.beginPath();
-      context.fillStyle = 'orange';//couleur du noyau au stade normal
+      context.fillStyle = 'orange';
       context.arc(player.position.x, player.position.y, player.size/2, 0, Math.PI*2, true);
       context.fill();
     }
@@ -266,7 +266,7 @@ Spacedots = new function(){
       }
       
       context.beginPath();
-      context.fillStyle = 'red';//couleur des balles ennemies diminue
+      context.fillStyle = 'red';//AMD
       context.arc(p.position.x, p.position.y, p.size/2, 0, Math.PI*2, true);
       context.fill();
       
@@ -298,7 +298,7 @@ Spacedots = new function(){
       }
       
       context.beginPath();
-      context.fillStyle = '#00ffcc';//couleur de la balle de point augmente
+      context.fillStyle = '#00ffcc';
       context.arc(p.position.x, p.position.y, p.size/2, 0, Math.PI*2, true);
       context.fill();
       
